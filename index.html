@@ -3,14 +3,14 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" href="favicon.png " type="image/x-icon">
+    <link rel="icon" href="favicon.png " type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
       integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://unpkg.com/transition-style">
+    <link rel="stylesheet" href="https://unpkg.com/transition-style" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -18,6 +18,12 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
     <title>Travelers</title>
@@ -41,8 +47,8 @@
       </section>
       <div class="header-intro-title limit p-20">
         <h1>
-          O seu destino <br />
-          a um click de distância
+          <span transition-style="in:wipe:right:1">O seu destino</span> <br />
+          <span transition-style="in:wipe:down">a um click de distância</span>
         </h1>
       </div>
     </header>
@@ -72,7 +78,10 @@
             >
               selecionar
             </span>
-            <div class="dropdown-menu dropdown-adventure-type-card" aria-labelledby="dropdownMenuButton">
+            <div
+              class="dropdown-menu dropdown-adventure-type-card"
+              aria-labelledby="dropdownMenuButton"
+            >
               <ul>
                 <li>Teste</li>
                 <li>Teste</li>
@@ -81,7 +90,7 @@
             </div>
           </div>
         </div>
-        <div transition-style="in:circle:center" class="div-btn-travel">
+        <div class="div-btn-travel">
           <span>VIAJAR</span>
         </div>
       </section>
@@ -291,8 +300,16 @@
           </div>
           <div>
             <form class="footer-form">
-              <input class="footer-input-email" type="email" placeholder="seuemail@mail.com"/>
-              <input class="footer-input-submit" type="submit" value="Reservar" />
+              <input
+                class="footer-input-email"
+                type="email"
+                placeholder="seuemail@mail.com"
+              />
+              <input
+                class="footer-input-submit"
+                type="submit"
+                value="Reservar"
+              />
             </form>
           </div>
         </div>
@@ -326,7 +343,7 @@
       integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
       crossorigin="anonymous"
     ></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+
+    <script src="js/animation.js"></script>
   </body>
 </html>
