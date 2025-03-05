@@ -547,6 +547,14 @@ body {
         }
      
 }
+@media (max-width: 417px) {
+    .place-card-footer{
+        display: flex;
+        flex-direction: column;
+        margin-top: 30px;
+        row-gap: 20px;
+    }
+}
 @media (max-width: 768px) {
   .category-cards-row-1 {
     grid-template-columns: 1fr;
@@ -561,6 +569,26 @@ body {
   .category-card {
     height: auto;
     /* Altura automática para ajuste em dispositivos móveis */
+  }
+  .place-cards{
+    padding: 0 20px;
+  }
+  .place-card {
+    display: grid;
+    grid-template-columns: 5fr;
+    grid-template-rows: 1fr 1fr;
+    max-width: 740px;
+    height: fit-content;
+    max-height: fit-content;
+    border-radius: 8px;
+    background-color: #1d1922;
+    padding: 22px;
+    margin-bottom: 54px;
+  }
+  .place-card-container-img{
+    width: 100%;
+    max-width: 100%;
+    max-height: 200px;
   }
 }
 
